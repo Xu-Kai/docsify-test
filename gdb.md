@@ -22,3 +22,7 @@ layout asm
 $9 = 0x7fffed05c200
 
 打印寄存器的值
+
+使用objdump反汇编时
+
+使用 -M intel 显示intel格式的汇编
