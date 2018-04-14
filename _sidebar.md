@@ -2,3 +2,4 @@
 * [中文示例](cn.md)
 * [GDB](gdb.md)
 * [GIT](git.md)
+* [opt](optimize.md)
