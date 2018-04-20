@@ -8,13 +8,13 @@ watch n > 9
 
 判断寄存器的值
 
-break \*addr
+break addr
 
-在代码内存地址addr设置断点(加 \*)
+在代码内存地址addr设置断点(加 )
 
 break line
 
-在源代码文件里面第line行设置断点(不加 \*)
+在源代码文件里面第line行设置断点(不加 )
 
 delete
 
