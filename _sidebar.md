@@ -1,5 +1,7 @@
 * [Contents](README.md)
+
 * [Optimization](optimize.md)
+
 * Linux
 	- [GDB](Linux/gdb.md)
 	- [GIT](Linux/git.md)
