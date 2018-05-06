@@ -1,6 +1,6 @@
 * [Contents](README.md)
 * [Optimization](optimize.md)
 * Linux
-	- [GDB](gdb.md)
-	- [GIT](git.md)
-	- [Sed](sed.md)
+	- [GDB](Linux/gdb.md)
+	- [GIT](Linux/git.md)
+	- [Sed](Linux/sed.md)
