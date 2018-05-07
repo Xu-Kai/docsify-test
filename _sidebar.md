@@ -6,3 +6,6 @@
 	- [GDB](Linux/gdb.md)
 	- [GIT](Linux/git.md)
 	- [Sed](Linux/sed.md)
+
+* Python
+  - [matplot画图](Python/matplot.md)
