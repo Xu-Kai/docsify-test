@@ -1,6 +1,7 @@
 ## Contents
 <!-- toc -->
 
+
 * [Contents](README.md)
 
 * [Optimization](optimize.md)
@@ -9,6 +10,7 @@
   - [GDB](Linux/gdb.md)
   - [GIT](Linux/git.md)
   - [Sed](Linux/sed.md)
+  - [CMake](Linux/cmake.md)
 
 * Python
   - [matplot画图](Python/matplot.md)
