@@ -12,3 +12,7 @@
 
 * Python
   - [matplot画图](Python/matplot.md)
+
+  
+ * C++
+  - [Thread, function](C/thread.md)

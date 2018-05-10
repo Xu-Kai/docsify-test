@@ -147,6 +147,8 @@ def blockSize():
 
     ax = plt.gca()
     ax.set_xticklabels([])
+    
+    plt.xticks(x)
     plt.ylabel("time(us)")
     #plt.plot(x, advect_u, "bo-", x, advect_v, "gv-", x, advect_w, "r^-", x, advect_scalar, "cD-", x, advance_uv, "y>-", x, advance_w, "y>-",x, advance_mut, "y>-" )
     plt.legend(loc="upper center", bbox_to_anchor=(0.5, 1.30), ncol=3, fancybox=True, shadow=False,fontsize=10)
