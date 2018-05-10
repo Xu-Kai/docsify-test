@@ -1,6 +1,6 @@
 
 # CMake
-
+```CMake
 >\# 按惯例，cmake的版本
 
 >CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
@@ -48,4 +48,4 @@
 >TARGET_LINK_LIBRARIES(ad-census
 
 >    某个库的名字)
-
+```
