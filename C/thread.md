@@ -18,7 +18,9 @@ int main(){
 
 ## function & bind
 * function
+
 ```C++
+
 #include < functional>  
    
 std::function< size_t(const char*)> print_func;  
@@ -27,8 +29,10 @@ std::function< size_t(const char*)> print_func;
 size_t CPrint(const char*) { ... }  
 print_func = CPrint;  
 print_func("hello world"):  
+
 ```
 * bind
+
 ```C++
 #include < functional>  
    

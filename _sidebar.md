@@ -8,4 +8,7 @@
 	- [Sed](Linux/sed.md)
 
 * Python
-  - [matplot画图](Python/matplot.md)
+  	- [matplot画图](Python/matplot.md)
+
+* C++
+	- [Thread,function](C/thread.md)
