@@ -94,8 +94,8 @@ If auto is used as a type of a parameter, the lambda is a generic lambda. (since
 
 * specifiers  - Optional sequence of specifiers.The following specifiers are allowed:
 
-+ mutable: allows body to modify the parameters captured by copy, and to call their non-const member functions
-+ constexpr: explicitly specifies that the function call operator is a constexpr function. When this specifier is not present, the function call operator will be constexpr anyway, if it happens to satisfy all constexpr function requirements(since C++17)
+  - mutable: allows body to modify the parameters captured by copy, and to call their non-const member functions
+  - constexpr: explicitly specifies that the function call operator is a constexpr function. When this specifier is not present, the function call operator will be constexpr anyway, if it happens to satisfy all constexpr function requirements(since C++17)
 
 * exception - provides the exception specification or the noexcept clause for operator() of the closure type
 
