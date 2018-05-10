@@ -1,51 +1,51 @@
 
 # CMake
-```CMake
->\# 按惯例，cmake的版本
+```sh
+# 按惯例，cmake的版本
 
->CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
->\# 项目名称
+# 项目名称
 
->PROJECT(AD-Census)
+PROJECT(AD-Census)
 
->\# cmake寻找cuda，这个要现在系统里面装好cuda，设置好cuda的环境参数啥的
+# cmake寻找cuda，这个要现在系统里面装好cuda，设置好cuda的环境参数啥的
 
->FIND_PACKAGE(CUDA REQUIRED)
+FIND_PACKAGE(CUDA REQUIRED)
 
->\# C++和CUDA的编译参数，可选。
+# C++和CUDA的编译参数，可选。
 
->SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
->SET(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS};-gencode arch=compute_61,code=sm_61;-std=c++11;)
+SET(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS};-gencode arch=compute_61,code=sm_61;-std=c++11;)
 
->\# 头文件路径，按需
+# 头文件路径，按需
 
->INCLUDE_DIRECTORIES(
+INCLUDE_DIRECTORIES(
 
->    ./containers)
+   ./containers)
 
->\# 库文件路径，按需
+# 库文件路径，按需
 
->LINK_DIRECTORIES(/usr/lib
+LINK_DIRECTORIES(/usr/lib
 
->    /usr/local/lib)
+    /usr/local/lib)
 
->\# 主要就是这个，教cmake去找nvcc来编译这些东西
+# 主要就是这个，教cmake去找nvcc来编译这些东西
 
->CUDA_ADD_EXECUTABLE(ad-census
+CUDA_ADD_EXECUTABLE(ad-census
 
->    main.cu
+    main.cu
 
->    ./containers/device_memory.cpp
+    ./containers/device_memory.cpp
 
->    ./containers/initialization.cpp
+    ./containers/initialization.cpp
 
->)
+)
 
->\# 链接外部库，按需
+# 链接外部库，按需
 
->TARGET_LINK_LIBRARIES(ad-census
+TARGET_LINK_LIBRARIES(ad-census
 
->    某个库的名字)
+    某个库的名字)
 ```
