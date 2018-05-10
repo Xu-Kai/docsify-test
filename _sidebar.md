@@ -1,7 +1,7 @@
 
-* [Contents] (README.md)
+* [Contents](README.md)
 
-* [Optimization] (optimize.md)
+* [Optimization](optimize.md)
 
 * Linux
   - [GDB](Linux/gdb.md)
