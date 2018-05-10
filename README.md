@@ -1,6 +1,5 @@
-## Contents
+# Contents
 <!-- toc -->
-
 
 * [Contents](README.md)
 
