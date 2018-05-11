@@ -26,6 +26,4 @@
 用户自定义补全方式              CTRL-X CTRL-U
 
 拼写建议                        CTRL-X CTRL-S 
-
-## 安装 bundle
 ```

@@ -12,7 +12,7 @@
   - [CMake](Linux/cmake.md)
   - [vim 插件](Linux/vimBundle.md)
   - [vim 补全命令](Linux/vimComplete.md)
-  
+
 * Python
   - [matplot画图](Python/matplot.md)
 
