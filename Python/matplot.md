@@ -179,3 +179,73 @@ def blockSize():
 
  blockSize()
 ```
+
+## share x-label
+
+```python
+def blockSizeLabel
+	x = [32,64,96,128,160,192,224]
+    y1 = [4000, 5000, 6000, 7000, 8000, 9000]
+    y0 = [40000, 45000, 50000, 55000, 60000, 65000, 70000, 75000]
+    advect_u = [6046,4805, 5381, 5402, 5681, 5514, 5507]
+    advect_v = [7220,5955,7729,7804,8079,7736,7770]
+    advect_w = [6950,5577,6445,7043, 8789, 7182, 7183]
+    advect_scalar = [5919, 4590, 5147, 5175, 5425, 5244, 5258]
+    advance_uv = [70007, 55628, 65486, 66031, 69099, 65663, 65697]
+    advance_w = [60827, 43250, 44205, 48776,66482,53021,52211]
+    advance_mut = [53223, 43658, 43711, 46579, 52613, 43737, 43675]
+
+    plt.subplots_adjust(left=0.10, right=0.95, top=0.98, bottom=0.1)
+    f, axes = plt.subplots(nrows=2, ncols=1, sharex=True, sharey=False)
+
+    axes[0].set_xlim([16, 240])
+    axes[1].set_ylim([3600, 9400])
+    axes[0].set_ylim([38000, 78000])
+    axes[0].set_yticks(y0)
+    axes[1].set_yticks(y1)
+
+    labels = []
+    l, =axes[1].plot(x, advect_u, "bo-",label="advect_u" )
+    labels.append(l)
+
+    l,=axes[1].plot(x, advect_v, "C3.-",label="advect_v", linewidth=1)
+    labels.append(l)
+
+    l,=axes[1].plot(x, advect_w, "C2|-", label="advect_w", linewidth=1)
+    labels.append(l)
+
+    l,=axes[1].plot(x, advect_scalar, "C8D-", label="advect_scalar", linewidth=1)
+    labels.append(l)
+
+    l,=axes[0].plot(x, advance_uv, "r^-", label="advance_uv", linewidth=1)
+    labels.append(l)
+
+    l,=axes[0].plot(x, advance_w, "C5x-", label="advance_w", linewidth=1)
+    labels.append(l)
+
+    l,=axes[0].plot(x, advance_mut, "C4d-", label="advance_mut", linewidth=1)
+    labels.append(l)
+    lname = ["advect_u", "advect_v", "advect_w", "advect_scalar", "advance_uv", "advance_w", "advance_mut"]
+    #plt.legend(handles=change(labels, 2), loc="upper center", bbox_to_anchor=(0.5, 2.32), ncol=4, fancybox=True, shadow=False, fontsize=10)
+    #axes[1].legend(handles=change(labels, 2), loc="upper center", bbox_to_anchor=(0.5, 2.32), ncol=4, fancybox=True, shadow=False, fontsize=10)
+    #axes[1].legend(handles=change(labels, 2), loc="upper center", bbox_to_anchor=(0.5, 2.32), ncol=4, fancybox=True, shadow=False, fontsize=10)
+    #axes[0].legend(labels, loc="upper center", bbox_to_anchor=(0.5, 2.32), ncol=4, fancybox=True, shadow=False, fontsize=10)
+
+    plt.legend(labels, lname, loc="upper center", bbox_to_anchor=(0.5, 2.32), ncol=4, fancybox=True, shadow=False, fontsize=10)
+
+    #plt.ylabel("time(us)")
+    plt.xlabel("Block size")
+
+    plt.xticks(x)
+    f.text(0.01, 0.5, "time(us)", va="center", rotation="vertical")
+    #axes[0].set_title('Sharing both axes')
+    plt.savefig('out/blockSize.eps', format='eps')
+    plt.subplots_adjust(hspace=0)
+    plt.setp([a.get_xticklabels() for a in f.axes[:-1]], visible=False)
+    plt.show()
+
+```
+
+## 各个位置的名称
+
+![](../Python/matplotlib/name.png)

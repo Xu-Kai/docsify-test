@@ -84,5 +84,10 @@ filetype plugin indent on    " required
 "
 
 " see :h vundle for more details or wiki for FAQ
-
 ```
+
+## 安装插件
+
+Launch vim and run :PluginInstall
+
+To install from command line: vim +PluginInstall +qall
