@@ -28,3 +28,6 @@
 
 * Sunway
   - [sw cross size](SW/swCross.md)
+
+* Archtecture
+  - [Appendix C](Archtechture/AppendixC.md)
