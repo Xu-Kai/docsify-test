@@ -30,4 +30,4 @@
   - [sw cross size](SW/swCross.md)
 
 * Archtecture
-  - [Appendix C](Archtechture/AppendixC.md)
+  - [Appendix C](Archtecture/AppendixC.md)
