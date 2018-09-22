@@ -15,6 +15,7 @@
   - [vim 命令整理](Linux/vimCommand.md)
   - [makefile 整理](Linux/make.md)
   - [ctags 整理](Linux/ctags.md)
+  - [Linux 引导修复](Linux/boot.md)
 
 * Python
   - [matplot画图](Python/matplot.md)
@@ -34,3 +35,6 @@
 
 * Archtecture
   - [Appendix C](Architecture/AppendixC.md)
+
+* Make
+  - [autoconf](Make/autoconf.md)
