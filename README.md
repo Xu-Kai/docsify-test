@@ -23,7 +23,8 @@
 * C++
   - [Thread,function](C/thread.md)
   - [Union](C/union.md)
-
+  - [main参数解析](C/getopt.md)
+  
 * CUDA
   - [CUDA](CUDA/cuda.md)
   - [CUDA Source](CUDA/cudaSrc.md)
