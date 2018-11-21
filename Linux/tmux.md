@@ -1,3 +1,5 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
 # tmux 安装
 
 tmux depends on libevent 2.x. Download it from:
@@ -22,3 +24,7 @@ To build and install tmux from a release tarball, use:
 
 	$ ./configure && make
 	$ sudo make install
+	
+vim ESC 延迟问题是tmux的转义延迟.下面的tmux设置应该更正：
+
+set -s escape-time 0	

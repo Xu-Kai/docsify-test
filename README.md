@@ -17,7 +17,8 @@
   - [ctags 整理](Linux/ctags.md)
   - [Linux 引导修复](Linux/boot.md)
   - [tmux 安装](Linux/tmux.md)
-
+  - [vim 正则表达式](Linux/vimRegExp.md)
+  
 * Python
   - [matplot画图](Python/matplot.md)
 
